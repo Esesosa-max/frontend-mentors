@@ -1,0 +1,54 @@
+
+
+main{
+	margin:140px 0px 0px 0px;
+}
+.card{
+	border:1px solid rgba(0,0,0,0.1);
+width: 300px;	
+position: relative;
+border-radius: 20px;
+text-align: center;
+	margin:0 auto;
+
+}
+.top{
+	width: 300px;
+	height: 150px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	background:url('./images/bg-pattern-card.svg') ;
+}
+.card-img{
+border-radius: 50%;
+	position: absolute;
+top: 85px;
+left: 50%;
+transform:   translate(-50%);
+
+
+}
+
+img{
+border-radius: 50%;	
+} 
+.card-footer{
+	display: flex ;
+	border-top: 1px solid rgba(0,0,0,0.1)
+
+}
+.card-footer-item{
+	margin: 16px;
+}
+body{
+	font-family: Kumbh Sans;
+}
+.sub-card-main{
+	position: relative;
+margin: 40px;
+top: 20px;
+}
+
+small{
+
+}
