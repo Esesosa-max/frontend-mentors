@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Intro component with sign up form</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="top">
+          <h2>
+            Learn to code by
+            <br />
+            watching others
+          </h2>
+          <p id="p">
+            See how experienced developers solve problems in real-time. Watching
+            scripted tutorials is great, but understanding how developers think
+            is invaluable.
+          </p>
+        </div>
+
+        <form>
+
+          <div class="box box-blue">
+            <p>
+              <strong>Try it free 7 days</strong>
+              then $20/mo. thereafter
+            </p>
+          </div>
+
+          <div class="form-control" ">
+            <input type="text" placeholder="First Name" id="fN" />
+          
+            <img src="./images/icon-error.svg" alt="error-icon" />
+            <small class="err-1"></small>
+          </div>
+
+
+          <div class="form-control" id="2">
+            <input type="text" placeholder="Last Name" id="Sn" />
+            <img src="./images/icon-error.svg" alt="error-icon" />
+            <small class="err-2"></small>
+          </div>
+
+          <div class="form-control" id="3">
+            <input
+              type="email"
+              placeholder=" Email Address"
+              id="Email_Address"
+              required
+            />
+            <img src="./images/icon-error.svg" alt="error-icon" />
+            <small class="err-3"></small>
+          </div>
+          
+          <div class="form-control" id="4">
+            <input type="password" placeholder="password" id="password" />
+            <img src="./images/icon-error.svg" alt="error-icon" />
+            <small class="err-4"></small>
+          </div>
+          
+          <button type="submit">Claim your free trial</button>
+          <small>
+            By clicking the button, you are agreeing to our Terms and
+            Services</small
+          >
+        </form>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
