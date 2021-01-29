@@ -1,0 +1,159 @@
+/* boo-yah */
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+
+:root {
+  /* ### Primary  */
+
+  --Strong-Cyan: hsl(171, 66%, 44%);
+  --Light-Blue: hsl(233, 100%, 69%);
+
+  /* ### Neutral */
+
+  --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+  --Grayish-Blue: hsl(201, 11%, 66%);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  text-align: center;
+  font-family: cursive;
+  color: var(--Dark-Grayish-Blue);
+  font-weight: 400;
+  /* font-size: 14px; */
+}
+
+header .container-small {
+  max-width: 100%;
+
+  padding: 20px;
+  background-image: url("/images/bg-header-desktop.png");
+
+  background-repeat: no-repeat;
+}
+
+header h1,
+header p {
+  margin: 10px;
+}
+.text-con {
+  margin: 0 auto;
+  max-width: 700px;
+  margin-bottom: 40px;
+}
+/* .btn {
+  padding: 0.3rem;
+  color: whitesmoke;
+  border-radius: 5px;
+} */
+header {
+  margin-bottom: 40px;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+.flex-start {
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.text-conn {
+  text-align: left;
+  margin: 20px;
+  width: 400px;
+}
+.flex > div {
+  padding: 1.5em;
+}
+.special img {
+  width: 100%;
+}
+
+.container-small {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.special {
+  max-width: 1200px;
+}
+.acesss {
+  margin: 20px;
+}
+.img-con img {
+  max-width: 100%;
+}
+
+.container-large {
+  max-width: 1200px;
+}
+
+a,
+li {
+  text-decoration: none;
+  color: #333;
+  list-style: none;
+}
+
+footer {
+  background-color: whitesmoke;
+  margin-top: 20px;
+}
+
+.footer-logo {
+  width: 100px;
+  height: 100px;
+}
+
+.links > li {
+  padding: 20px;
+}
+.space {
+  margin: 20px;
+}
+.btn {
+  padding: 1rem 3rem;
+  border-radius: 25px;
+  margin: 20px;
+  border: none;
+  color: #fff;
+  box-shadow: 3px 3px rgba(0, 0, 0, 0.1);
+}
+.btn-primary {
+  background: var(--Strong-Cyan);
+}
+.btn-secondary {
+  background: var(--Light-Blue);
+}
+img{
+    overflow: hidden;
+}
+@media (max-width: 768px) {
+  .container-large {
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .contanier{
+    overflow: hidden;
+  }
+  .footer-logo {
+    flex-direction: column
+  }
+  .flex{
+      flex-direction: column;
+  }
+  footer{
+    overflow: hidden;
+  }
+  }
+}
