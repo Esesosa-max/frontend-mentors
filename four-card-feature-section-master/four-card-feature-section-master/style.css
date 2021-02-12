@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+
+  padding: 0;
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+  font-family: "Poppins", sans-serif;
+  background: hsl(0, 0%, 98%);
+}
+
+.card {
+  /* margin: 5px; */
+  padding: 30px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
+  width: 320px;
+}
+
+img {
+  text-align: right;
+}
+h1 {
+  font-weight: 200;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.header {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+.card-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1140px;
+}
+.card {
+  margin: 10px;
+  width: 350px;
+  padding: 30px;
+  background: #fff;
+}
+.card > * {
+  background: #fff;
+}
+.card:nth-child(1) {
+  border-top: 3px solid var(--Cyan);
+  grid-row: 3/4;
+  transform: translateY(50%);
+}
+.card:nth-child(2) {
+  border-top: 3px solid var(--Red);
+}
+.card:nth-child(3) {
+  border-top: 3px solid var(--Orange);
+  transform: translateY(50%);
+}
+.card:nth-child(4) {
+  border-top: 3px solid var(--Blue);
+}
+@media (max-width: 900px) {
+  .card:nth-child(1),
+  .card:nth-child(3) {
+    transform: translateY(0%);
+  }
+}
