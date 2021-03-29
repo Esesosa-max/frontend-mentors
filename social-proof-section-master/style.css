@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+  font-family: "Spartan", sans-serif;
+  font-size: 15px;
+  overflow-x: hidden;
+}
+main {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.text-container {
+  max-width: 500px;
+}
+h1 {
+  font-size: 50px;
+}
+
+.log {
+  padding: 20px;
+  box-shadow: -15px 20px 20px 14px rgb(0 0 0 / 10%);
+  background: #fff;
+  margin: 10px;
+  width: 400px;
+}
+.log:nth-child(2) {
+  position: relative;
+  right: -40px;
+}
+.log:nth-child(3) {
+  position: relative;
+  right: -60px;
+}
+
+.card-first img {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.card-first {
+  background: hsl(300, 43%, 22%);
+  margin: 20px;
+  border-radius: 10px;
+  width: 320px;
+  padding: 20px;
+}
+.card-first:nth-child(2) {
+  position: relative;
+  top: 40px;
+}
+.card-first:nth-child(3) {
+  position: relative;
+  top: 60px;
+}
+
+.grid-card {
+  display: flex;
+  color: #fff;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 850px) {
+  .text-container h1 {
+    text-align: center;
+    font-size: 30px;
+  }
+  .text-container p {
+    text-align: center;
+    /* width: 320px; */
+  }
+  .text-container {
+    margin: 0 auto;
+  }
+  .log,
+  .log:nth-child(2),
+  .log:nth-child(3) {
+    position: relative;
+    right: 0px;
+    width: 320px;
+    margin: 0 auto;
+    margin: 10px;
+  }
+  .second-Guy {
+    margin: 0 auto;
+  }
+  .grid-card {
+    justify-content: center;
+    align-items: center;
+  }
+}
