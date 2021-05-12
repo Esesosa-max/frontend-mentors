@@ -1,0 +1,72 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+body{
+	margin: 0px;
+	display: flex;
+	min-height: 100vh;
+	justify-content: center;
+	align-items: center;
+	background: hsl(233, 47%, 7%);
+	font-family: cursive;
+	color: White;
+	font-family: 'Inter', sans-serif;
+}
+
+
+.card{
+	display: flex;
+background:  hsl(244, 38%, 16%);
+border-radius: 20px;
+max-width: 1000px;
+}
+.right{
+	width: 450.3345px;
+	background: url('./images/image-header-desktop.jpg');
+background-size: cover;
+background-position: center;
+
+  filter: invert(8%) sepia(13%) saturate(3207%) hue-rotate(130deg)
+    brightness(95%) contrast(80%);
+}
+.left{
+	padding: 3em;
+	width: 400px
+}
+.card-footer{
+	display: flex;
+	justify-content: space-between;
+}
+@media(max-width: 1000px){
+	  .right,
+  .left {
+    width: 400px;
+  }
+
+  .card {
+    max-width: 800px;
+  }
+
+}
+@media(max-width: 800px){
+
+  .right{
+  	width: 100%;
+  	height: 400px;
+  	background: url('./images/image-header-mobile.jpg');
+  	background-size: cover;
+  	background-position: center;
+  
+  }
+
+  .card {
+  	flex-direction: column-reverse;
+  	text-align: center;
+    max-width: 800px;
+  }
+  .card-footer{
+  	flex-direction: column;
+  }
+.card-footer > *{
+	margin: 10px;
+}
+}
