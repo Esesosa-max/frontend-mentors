@@ -1,0 +1,79 @@
+body{
+	background:  hsl(216, 12%, 8%);
+	color: #fff;
+	font-family: cursive;
+	font-size: 15px;
+}
+.container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+.card{
+	width: 350px;
+	background-color: hsl(213,19%,18%);
+	padding: 20px;
+	border-radius: 20px;
+	
+}
+.btn-container button{
+	padding: 15px;
+	height: 40px;
+	background: hsl(212,17%,20%);
+	border: none;
+	outline: none;
+	border-radius: 50%;
+	margin: 5px;
+	color: hsl(217, 12%, 63%);
+}
+/*hover state*/
+.btn-container button:hover{
+	background-color: hsl(217, 12%, 63%);
+	color: #fff;
+}
+.btn-container button:active{
+	background-color:hsl(25, 97%, 53%);
+	color: #fff;
+}
+/*active state*/
+
+.btn-container{
+	margin-bottom: 20px;
+}
+.card-container{
+	padding: 10px;
+}
+.submit-btn{
+	width: 100%;
+	padding: 10px 20px;
+	border: none;
+	outline: none;
+	background: hsl(25, 97%, 53%);
+	color: #fff;
+	border-radius: 20px;
+}
+.submit-btn:hover{
+		background:  #fff;
+	color:hsl(25, 97%, 53%);
+}
+.card-header img{
+
+	background: hsl(212,17%,20%);
+	padding: 10px;
+		border-radius: 50%;
+}
+.card-body{
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.hide{
+	display: none;
+}
+.card-2 {
+
+	text-align: center;
+}
+.card-2 .card-body p:nth-child(1){
+	color:hsl(25, 97%, 53%) ;
+}
