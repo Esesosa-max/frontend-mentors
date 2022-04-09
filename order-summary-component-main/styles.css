@@ -1,0 +1,94 @@
+body{
+    background:hsl(225, 100%, 94%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family:"DejaVu Sans";
+    font-size: 14px;
+}
+.card{
+   width: 350px;
+border-radius: 20px;
+    background:white;
+    box-shadow: 10px 10px 10px 5px rgba(0,0,0,0.1);
+}
+.card-top{
+background-image:
+        url("./images/illustration-hero.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+ border-top-left-radius: 20px;
+ border-top-right-radius: 20px;
+    height: 190px;
+}
+.card-body{
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right:40px;
+
+    text-align: center;
+}
+.outer-div{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: ghostwhite;
+    padding:20px;
+
+}
+.card-section{
+    display: flex;
+    align-items: center;
+    /*justify-content:space-between;*/
+}
+.card-body p{
+    color:gray;
+}
+.card-body h3{
+    font-size: 20px;
+}
+.card-footer{
+    padding:20px;
+  display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.card-footer a{
+    text-align: center;
+    margin: 20px;
+    color:black;
+    font-weight: bolder;
+
+}
+.card-footer button{
+    font-weight: bolder;
+    cursor: pointer;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border:none;
+    outline:none;
+    background :hsl(245, 75%, 52%);
+    color: #fff;
+    border-radius: 10px;
+}
+
+.card-footer button:hover{
+    opacity: 0.75;
+    transform: scale(1.1);
+    transition: all 1s;
+}
+.h5-p-tag{
+    margin-left: 10px;
+}
+
+.change{
+    color :hsl(245, 75%, 52%);
+    text-decoration: underline;
+}
+.card-section h5 , .card-section p{
+    margin: 0;
+}
+
