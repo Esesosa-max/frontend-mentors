@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="/" class="brand">
+        <img src="./images/logo.svg" alt="Logo " />
+      </a>
+      <a href="#" class="ham">
+        <img src="./images/icon-menu.svg" alt="" />
+      </a>
+      <div class="overlay">
+              <div class="mobile-nav">
+        <img src="./images/icon-close-menu.svg" id="close" />
+        <div class="mobile-nav-con">
+        <div class="dropdown">
+          <div class="dropbtn">
+            Features <img src="./images/icon-arrow-up.svg" class="drop-img" />
+          </div>
+          <div class="dropdown-content">
+            <a href="#"><img src="./images/icon-todo.svg" alt="" /> TodoList</a>
+            <a href="#"
+              ><img src="./images/icon-calendar.svg" alt="" /> Calender</a
+            >
+            <a href="#"
+              ><img src="./images/icon-reminders.svg" alt="" /> Reminders</a
+            >
+            <a href="#"
+              ><img src="./images/icon-planning.svg" alt="" /> Planing</a
+            >
+          </div>
+        </div>
+        <div class="dropdown">
+          <a class="dropbtn">
+            Company <img src="./images/icon-arrow-up.svg" class="drop-img" />
+          </a>
+          <div class="dropdown-content">
+            <a href="#">History</a>
+            <a href="#">Our Team</a>
+            <a href="#">Blog</a>
+          </div>
+        </div>
+        <a>Careers</a>
+        <a>About</a>
+</div>
+      
+      </div>
+
+      </div>
+
+      <div class="nav-ul">
+        <div class="dropdown">
+          <a class="dropbtn">
+            Features <img src="./images/icon-arrow-up.svg" class="drop-img" />
+          </a>
+          <div class="dropdown-content">
+            <a href="#"><img src="./images/icon-todo.svg" alt="" /> TodoList</a>
+            <a href="#"
+              ><img src="./images/icon-calendar.svg" alt="" /> Calender</a
+            >
+            <a href="#"
+              ><img src="./images/icon-reminders.svg" alt="" /> Reminders</a
+            >
+            <a href="#"
+              ><img src="./images/icon-planning.svg" alt="" /> Planing</a
+            >
+          </div>
+        </div>
+        <div class="dropdown">
+          <a class="dropbtn">
+            Company <img src="./images/icon-arrow-up.svg" class="drop-img" />
+          </a>
+          <div class="dropdown-content">
+            <a href="#">History</a>
+            <a href="#">Our Team</a>
+            <a href="#">Blog</a>
+          </div>
+        </div>
+        <a>Careers</a>
+        <a>About</a>
+      </div>
+      <div class="nav-btns">
+        <button>Login</button>
+        <button>Register</button>
+      </div>
+    </nav>
+
+    <div class="hero">
+      <div class="hero-text">
+        <h1>Make <br />remote work</h1>
+
+        <p>
+          Get your team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.
+        </p>
+        <button>Learn more</button>
+        <div class="logos">
+          <img src="./images/client-audiophile.svg" alt="" />
+          <img src="./images/client-databiz.svg" alt="" />
+          <img src="./images/client-maker.svg" alt="" />
+          <img src="./images/client-meet.svg" alt="" />
+        </div>
+      </div>
+
+      <div class="img-container">
+        <img src="./images/image-hero-desktop.png" alt="" id="hero-img" />
+      </div>
+    </div>
+    <script>
+      const ham = document.querySelector(".ham");
+      const dropBtn = document.querySelectorAll('.drop-btn')
+      const MB_Nav=document.querySelector(".mobile-nav")
+      const dropdownContent = document.querySelectorAll(".dropdown-content")
+      const heroImg = document.querySelector('#hero-img')
+      ham.addEventListener("click", (e) => {
+       MB_Nav.classList.add("show");
+        // document.querySelector("body").style.background = "#777";
+          heroImg.classList.add('darken-img')
+          document.querySelector("body").classList.add('lock')
+          document.querySelector('.overlay').style.display ='block'
+      });
+      document.querySelector("#close").addEventListener("click", (e) => {
+        MB_Nav.classList.remove("show");
+              document.querySelector("body").classList.remove('lock')
+        heroImg.classList.remove('darken-img')
+          document.querySelector('.overlay').style.display ='none'
+      });
+      
+    </script>
+  </body>
+</html>
