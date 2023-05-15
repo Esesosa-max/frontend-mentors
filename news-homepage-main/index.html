@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | News homepage</title>
+    <link rel="stylesheet" href="./style.css" />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style></style>
+  </head>
+  <body>
+    <main>
+      <nav>
+        <a href="#" class="brand-logo">
+          <img src="./assets/images/logo.svg" alt="Logo" />
+        </a>
+        <img src="./assets/images/icon-menu.svg" class="menu-img" />
+        <div class="backdrop">
+          <ul class="nav-links">
+            <img
+              src="./assets/images/icon-menu-close.svg"
+              alt=""
+              class="close-btn"
+            />
+            <li class="nav-link">Home</li>
+            <li class="nav-link">New</li>
+            <li class="nav-link">Popular</li>
+            <li class="nav-link">Trending</li>
+            <li class="nav-link">Categories</li>
+          </ul>
+        </div>
+      </nav>
+      <div class="flex-hero">
+        <div class="hero-content">
+          <img src="./assets/images/image-web-3-desktop.jpg" alt="" />
+          <div class="hero-text">
+            <div class="flex-heading">
+              <h2>
+                The Bright<br />
+                Future of <br class="break" />
+                Web 3.0?
+              </h2>
+            </div>
+
+            <div class="flex-p">
+              <p>
+                We dive into the next evolution of the web that claims to put
+                the power of the platforms back into the hands of the people.
+                But is it really fulfilling its promise?
+              </p>
+              <button>Read more</button>
+            </div>
+          </div>
+        </div>
+        <div class="hero-sidenav">
+          <h3>New</h3>
+          <div class="card">
+            <h4>Hydrogen VS Electric Cars</h4>
+            <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+          </div>
+          <div class="card">
+            <h4>The Downsides of AI Artistry</h4>
+            <p>
+              What are the possible adverse effects of on-demand AI image
+              generation?
+            </p>
+          </div>
+          <div class="card">
+            <h4>Is VC Funding Drying Up?</h4>
+            <p>
+              Private funding by VC firms is down 50% YOY. We take a look at
+              what that means.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <section class="cards">
+        <div class="card">
+          <div class="image-con">
+            <img src="./assets/images/image-retro-pcs.jpg" alt="" />
+          </div>
+          <div class="section-text">
+            <h3 class="special-numbers">01</h3>
+            <h4>Reviving Retro PCs</h4>
+            <p>What happens when old PCs are given modern upgrades?</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="image-con">
+            <img src="./assets/images/image-top-laptops.jpg" alt="" />
+          </div>
+          <div class="section-text">
+            <h3 class="special-numbers">02</h3>
+            <h4>Top 10 Laptops of 2022</h4>
+            <p>Our best picks for various needs and budgets.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="image-con">
+            <img src="./assets/images/image-gaming-growth.jpg" alt="" />
+          </div>
+          <div class="section-text">
+            <h3 class="special-numbers">03</h3>
+            <h4>The Growth of Gaming</h4>
+            <p>How the pandemic has sparked fresh opportunities</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script>
+      let menuBtn = document.querySelector(".menu-img");
+      let navLinks = document.querySelector(".backdrop");
+      let closeBtn = document.querySelector(".close-btn");
+      menuBtn.addEventListener("click", (e) => {
+        document.body.classList.add("lock");
+        navLinks.style.display = "block";
+        navLinks.classList.add("show");
+      });
+      closeBtn.addEventListener("click", (e) => {
+        document.body.classList.remove("lock");
+        navLinks.style.display = "none";
+        // navLinks.classList.remove("show");
+      });
+    </script>
+  </body>
+</html>
